@@ -1,0 +1,27 @@
+package com.vampa.persistence;
+
+public class DataSourceTest {
+	@RunWith(SpringJUnit4ClassRunner.class)
+	@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+	public class DataSourceTest {
+	 
+	    @Autowired
+	    private DataSource dataSource;
+	    
+	    @Test
+	    public void testConnection() {
+	      
+	        try(Connection con = dataSource.getConnection();){
+	            
+	            System.out.println("con = " + con);
+	            
+	        } catch(Exception e) {
+	            
+	            e.printStackTrace();
+	            
+	        }
+	        
+	    }
+	    
+	}
+}

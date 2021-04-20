@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\admin\Desktop\Vampa\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2881663849.index
+3725436821.index
+2666535942.index
+2729348698.index
+71557633.index
+2534414289.index

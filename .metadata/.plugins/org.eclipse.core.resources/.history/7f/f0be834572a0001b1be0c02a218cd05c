@@ -1,0 +1,133 @@
+package com.vampa.model;
+
+
+public class MemberVO {
+	
+	//회원 id
+	private String memberId;
+	
+	//회원 pw
+	private String memberPw;
+	
+	//회원 이름
+	private String memberName;
+	
+	//회원 이메일
+	private String memberMail;
+	
+	//회원 우편번호
+	private String memberAddr1;
+	//회원 주소
+	private String memberAddr2;
+	//회원 상세주소
+	private String memberAddr3;
+	
+	//관리자 구분 (0:일반사용자 / 1:관리자)
+	private int adminCk;
+	
+	//등록일자
+	private int regDate;
+	
+	//회원 돈
+	private int money;
+	//호원 포인트
+	private int point;
+	
+	public String getMemberId() {
+		return memberId;
+	}
+
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+
+	public String getMemberPw() {
+		return memberPw;
+	}
+
+	public void setMemberPw(String memberPw) {
+		this.memberPw = memberPw;
+	}
+
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+
+	public String getMemberMail() {
+		return memberMail;
+	}
+
+	public void setMemberMail(String memberMail) {
+		this.memberMail = memberMail;
+	}
+
+	public String getMemberAddr1() {
+		return memberAddr1;
+	}
+
+	public void setMemberAddr1(String memberAddr1) {
+		this.memberAddr1 = memberAddr1;
+	}
+
+	public String getMemberAddr2() {
+		return memberAddr2;
+	}
+
+	public void setMemberAddr2(String memberAddr2) {
+		this.memberAddr2 = memberAddr2;
+	}
+
+	public String getMemberAddr3() {
+		return memberAddr3;
+	}
+
+	public void setMemberAddr3(String memberAddr3) {
+		this.memberAddr3 = memberAddr3;
+	}
+
+	public int getAdminCk() {
+		return adminCk;
+	}
+
+	public void setAdminCk(int adminCk) {
+		this.adminCk = adminCk;
+	}
+
+	public int getRegDate() {
+		return regDate;
+	}
+
+	public void setRegDate(int regDate) {
+		this.regDate = regDate;
+	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	@Override /*상속 시 메소드를 재정의해서 내가 원하는대로 코딩을 가능하게 만듦. 
+				VS
+				부모 클래스로부터 오버라이드 되었다는 것을 표시. 부모클래스 인터페이스가 수정되었을 때, 자식 클래스를 수정하지 않으면 지옥 가는데@Override를 쓰면 컴파일러가 에러를 내준다*/
+	public String toString() {
+		return "MemberVO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
+				+ ", memberMail=" + memberMail + ", memberAddr1=" + memberAddr1 + ", memberAddr2=" + memberAddr2
+				+ ", memberAddr3=" + memberAddr3 + ", adminCk=" + adminCk + ", regDate=" + regDate + ", money=" + money
+				+ ", point=" + point + "]";
+	}
+}

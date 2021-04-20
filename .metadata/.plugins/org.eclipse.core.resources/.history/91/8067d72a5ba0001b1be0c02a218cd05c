@@ -1,0 +1,5 @@
+package com.vampa.model;
+
+public class MemberVO {
+
+}

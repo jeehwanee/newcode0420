@@ -1,0 +1,5 @@
+package com.vampa.service;
+
+public class MemberServicelmpl implements MemberService {
+
+}
